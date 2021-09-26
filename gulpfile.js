@@ -20,7 +20,7 @@ let path = {
     js: `${source_folder}/static/js/**/*.js`,
   },
   clean: `./${project_folder}/`
-}
+};
 
 let {src, dest} = require('gulp'),
   gulp = require('gulp'),
@@ -42,7 +42,7 @@ function browserSync() {
     port: 3000,
     notify: false
   })
-}
+};
 
 function html() {
   return src(path.src.html)
@@ -53,7 +53,7 @@ function html() {
     )
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
-}
+};
 
 function css() {
   return src(path.src.css)
@@ -77,7 +77,7 @@ function css() {
     )
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
-}
+};
 
 function js() {
   return src(path.src.js)
@@ -95,18 +95,18 @@ function js() {
     )
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream())
-}
+};
 
 
 function watchFiles() {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
-}
+};
 
 function clean() {
   return del(path.clean);
-}
+};
 
 let build = gulp.series(clean, gulp.parallel(js, css, html));
 let watch = gulp.parallel(build, watchFiles, browserSync);
