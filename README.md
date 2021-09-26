@@ -1,5 +1,5 @@
-# [«Результата тестового задания»](https://youthful-beaver-49a463.netlify.app/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/41a8abbf-2e15-4795-a2e2-95ef58b391ee/deploy-status)](https://app.netlify.com/sites/youthful-beaver-49a463/deploys)<br>
+# [«Результат тестового задания»](https://jovial-knuth-ba451c.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/466cd12e-6b68-4850-8027-9c9930037a31/deploy-status)](https://app.netlify.com/sites/jovial-knuth-ba451c/deploys)<br>
 Тестовое задание для [IVI](https://www.ivi.ru/)
 <br>
 
